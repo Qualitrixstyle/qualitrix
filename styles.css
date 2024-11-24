@@ -1,0 +1,846 @@
+/* CSS File: styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f5f5f5; /* Light text */
+}
+
+header {
+  background-color: #1a1a1a; /* Darker header background */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f48fb1; /* Pink accent color */
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #ff80ab; /* Slightly lighter pink on hover */
+}
+
+/* Navigation Menu */
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #f48fb1; /* Pink accent color on hover */
+}
+
+/* CTA Buttons */
+.cta-buttons .cta {
+  background-color: #f48fb1; /* Pink background for primary CTA */
+  color: #121212; /* Dark text */
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-buttons .cta.secondary {
+  background-color: #333333; /* Secondary button with dark background */
+  color: #f5f5f5;
+  border: 1px solid #f48fb1;
+}
+
+.cta-buttons .cta:hover {
+  background-color: #ff80ab; /* Slightly lighter pink on hover */
+}
+
+.cta-buttons .cta.secondary:hover {
+  background-color: #444444; /* Slightly lighter for secondary hover */
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?beauty,spa') center/cover no-repeat; /* Replace with actual image */
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #f48fb1; /* Pink accent color */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+/* CTA Buttons */
+.cta-buttons .cta {
+  background-color: #f48fb1; /* Pink accent color */
+  color: #121212; /* Dark text for contrast */
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.cta-buttons .cta.secondary {
+  background-color: transparent;
+  color: #f5f5f5;
+  border: 2px solid #f48fb1;
+}
+
+.cta-buttons .cta:hover {
+  background-color: #ff80ab; /* Slightly lighter pink on hover */
+}
+
+.cta-buttons .cta.secondary:hover {
+  background-color: #f48fb1; /* Match primary color on hover */
+  color: #121212;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background-color: #1a1a1a; /* Dark background for the section */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #f48fb1; /* Pink accent color */
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  gap: 20px;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+}
+
+.highlight img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.highlight p {
+  font-size: 1rem;
+}
+
+/* About Image */
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #1a1a1a; /* Dark section background */
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  color: #f48fb1; /* Pink accent color */
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Service Cards */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #2a2a2a; /* Darker background for cards */
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #f48fb1;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* View All Services Button */
+.view-all-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #f48fb1;
+  color: #121212;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-all-btn:hover {
+  background-color: #ff80ab;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 50px 20px;
+  background-color: #1a1a1a; /* Dark background */
+  text-align: center;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  color: #f48fb1; /* Pink accent color */
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* View More Button */
+.view-more-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #f48fb1;
+  color: #121212;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-more-btn:hover {
+  background-color: #ff80ab;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #f48fb1;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Testimonials Carousel */
+.testimonial-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonial {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  flex: 0 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  scroll-snap-align: start;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Special Offers Section */
+.special-offers {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.special-offers-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.special-offers h2 {
+  font-size: 2.5rem;
+  color: #f48fb1; /* Pink accent color */
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscription-form input[type="email"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 70%;
+  max-width: 300px;
+  color: #121212;
+}
+
+.subscription-form input[type="email"]::placeholder {
+  color: #888;
+}
+
+.subscription-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #f48fb1;
+  color: #121212;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+  background-color: #ff80ab;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Blog Section */
+.blog {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog h2 {
+  font-size: 2.5rem;
+  color: #f48fb1; /* Pink accent color */
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card h3 {
+  font-size: 1.3rem;
+  color: #f48fb1;
+  margin: 15px;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 0 15px 15px;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 0 15px 15px;
+  color: #f48fb1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #ff80ab;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #f48fb1; /* Pink accent color */
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #121212;
+  width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #f48fb1;
+  color: #121212;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ff80ab;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Footer Section */
+.footer {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  color: #f48fb1;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f48fb1;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin-right: 10px;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f48fb1;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.85rem;
+  color: #888;
+  background-color: #121212;
+}
+/* CSS File: styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Appointment Section */
+.appointment {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.appointment-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.appointment h2 {
+  font-size: 2.5rem;
+  color: #f48fb1; /* Pink accent color */
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* Appointment Form */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="tel"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  color: #121212;
+}
+
+.appointment-form input::placeholder {
+  color: #888;
+}
+
+.appointment-form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #f48fb1;
+  color: #121212;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointment-form button:hover {
+  background-color: #ff80ab;
+}
